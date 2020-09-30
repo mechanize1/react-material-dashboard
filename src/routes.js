@@ -8,6 +8,7 @@ import DashboardView from 'src/views/reports/DashboardView';
 import LoginView from 'src/views/auth/LoginView';
 import NotFoundView from 'src/views/errors/NotFoundView';
 import ProductListView from 'src/views/product/ProductListView';
+import InventoryListView from 'src/views/inventory/InventoryListView';
 import RegisterView from 'src/views/auth/RegisterView';
 import SettingsView from 'src/views/settings/SettingsView';
 
@@ -34,6 +35,10 @@ const routes = [
       { path: '/', element: <Navigate to="/app/dashboard" /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]
+  },
+  {
+    path: 'inventories',
+    element: <InventoryListView />
   }
 ];
 
